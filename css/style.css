@@ -16,6 +16,7 @@
 
 .pergamena {
   margin: auto;
+  padding: 20px;
   min-width: 30%;
   min-height: 80%;
   background-image: url(../img/pergamena.svg);
@@ -30,7 +31,14 @@
   list-style: none;
   text-align: center;
   margin: 0 auto;
+  max-height: 330px;
+  overflow-y: auto;
 }
+
+.lista li {
+  text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.3);
+}
+
 
 .lista li span {
   cursor: pointer;
@@ -40,4 +48,26 @@
   position: absolute;
   bottom: 15%;
   left: 20%;
+}
+
+.comandi input {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.3);
+
+}
+
+input:focus {
+  border: none
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background-color: #75151e;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.3);
 }

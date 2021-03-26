@@ -16,7 +16,7 @@ var app = new Vue(
         this.lista.splice(itemIndex, 1);
       },
       addElement: function() {
-        if (this.newItem.length > 0) {
+        if (this.newItem !== "") {
           this.lista.push(this.newItem);
           this.newItem = "";
         }

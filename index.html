@@ -12,11 +12,11 @@
   <div id="todolist" class="container">
     <div class="pergamena">
       <ul class="lista" v-if="lista.length > 0">
-        <li v-for="(item,i) in lista">{{item}} <span @click="deletItem(i)">X</span></li>
+        <li v-for="(item,i) in lista">{{item}} <span @keydown.13="deletItem" @click="deletItem(i)">X</span></li>
       </ul>
       <div class="comandi">
-        <input type="text" v-model="newItem" placeholder="inserisci nuovo elemento">
-        <button @click="addElement">aggiungi</button>
+        <input @keydown.13="addElement" type="text" v-model="newItem" placeholder="inserisci nuovo elemento">
+        <button @keydown.13="addElement" @click="addElement">aggiungi</button>
       </div>
     </div>
   </div>
