@@ -16,8 +16,10 @@ var app = new Vue(
         this.lista.splice(itemIndex, 1);
       },
       addElement: function() {
-        this.lista.push(this.newItem);
-        this.newItem = "";
+        if (this.newItem.length > 0) {
+          this.lista.push(this.newItem);
+          this.newItem = "";
+        }
       }
     }
 });
